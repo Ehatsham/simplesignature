@@ -128,7 +128,7 @@ defaultvalue_XXX	| The “defaultvalue_” parameter is dynamic, the parameter n
 
  > `*` Note: the last few parameters are complicated, and may need some help from our support team.  Feel free to reach out to support@toafinish.com with questions.
  
-####After creating the signature button:
+#### After creating the signature button:
 
 ⦁	Now go to Setup  --> click on the object manager and click on Contacts and go to   Page Layouts after that click on  contact layout that will be exist in page layouts of contacts object.   (Note: if you selected a different object as the parent, then go to the page layouts for that object, not for Contacts.)
 
