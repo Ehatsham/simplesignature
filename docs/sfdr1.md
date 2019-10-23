@@ -137,4 +137,6 @@ defaultvalue_XXX	| The “defaultvalue_” parameter is dynamic, the parameter n
 ⦁	Go to “Related Lists” and drag down the Signatures related list onto the layout. 
 
 
+![alt text](images/src6.png "Signature Process")
+
  
