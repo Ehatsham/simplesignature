@@ -191,7 +191,7 @@ Test, test, test and if you run into issue, you can move the URL back until you 
 
 
 
-##Automatic Lead Creation
+## Automatic Lead Creation
 
 By default Signatures are created and then exist in Salesforce independently of other records.  However, in the Paid Version of Simple Signature, it is possible to have a Lead Created immediately each time somebody signs via the Signature page that was set up in the previous steps.  Here are the necessary steps.
 
