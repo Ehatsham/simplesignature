@@ -155,7 +155,7 @@ Most companies will be able to use the default signature page that comes with th
  1) First you will need to add a static resource to your org that allows the signature process.  Go to Setup > custom code > Static Resources and press the "New" button.  Call the Static Resource "SignPad", change the Cache Control to "Public" and then select a file called SignPad.zip that you will need to download from the "resources" folder in our GitHub repository.
 GitHub.com Simple Signature Sample Code Repository |
 ---------------------------------------------------|
- https://github.com/ToAFinish/simplesignature
+ https://github.com/ToAFinish/simplesignature | 
 
 2) Next, you will need to create a new VisualForce page.  Go to Setup > Develop > VisualForce Pages and click the "New" button.  If the "New" button is not available, you will need to speak with your Administrator to get additional rights.  
 
