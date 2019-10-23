@@ -1,4 +1,6 @@
-# Basic Configuration                                                                                       ##Chapter 2
+# chapter 2
+------------------------------------------------------
+# Basic Configuration                                                                                    
 >The steps necessary to set up the app for full use
 
 # T
