@@ -24,3 +24,11 @@ The first thing you will want to do is configure the Simple Signature form to sh
 ⦁	Test the process using the instructions in the next chapter.
 
 ⦁	Next, go back to the Lightning web version of Salesforce to continue configuring.
+
+# Modifying the Signature Form
+
+The next thing you need to do before beginning to use it is change what the form says in order to make it yours.
+⦁	Make sure you are in the “Lightning” web version of Salesforce, with Admin permissions.
+
+⦁	At the top-right of the page click on Setup-->  user interface  -->  Custom Labels.  
+
