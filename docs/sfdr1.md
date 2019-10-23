@@ -90,3 +90,6 @@ Formula | Opportunity__r.Name |
 
 ⦁	For the Behavior you can select what you think is best, and for the Content Source, choose URL.  Your screen should be something like this
 
+![alt text](images/src5.png "Signature Process")
+
+
