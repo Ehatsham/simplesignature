@@ -66,7 +66,7 @@ If the Signature page is being called from a parent object (Opportunity, Contact
 
 
 Field	API | Name | Field Type
------------- | -------------
+------------ | ------------- | ---------------
 Opportunity | Opportunity_Name__c	| 	Formula
 Formula | Opportunity__r.Name | 
 
