@@ -39,3 +39,12 @@ The next thing you need to do before beginning to use it is change what the form
 
 
 ![alt text](images/src3.png "Signature Process")
+> * Note: If you do not see the “Translations” area shown in the screenshot above, go to Setup after that go to  Quick find box and type Translation Workbench  and then selectTranslation Settings and turn it on.  You should choose “English” or the native language of the users who will be using the form. 
+
+⦁	Select a Language, typically “English” or the default language your users will be using, and then type in the Title you want at the top of the form.  Press the Save button, then click on the “Master Label” link, and you will see that this title is now a part of the form. 
+
+⦁	If you have users with Salesforce set to a different language, you will need to repeat steps 4-5 for each of those languages.  If you do not, then they will default to seeing the title “Salesforce.com, Inc. Release Form”.
+
+⦁	Now, go back to Step 3 and this time click on the Long Legal Text 1 item.  This is the text that will go under the title of the form, and before the fields and signature.  If you can fit it all in, then go ahead and do so, if not you can add text in the Long Legal Text 2 item.  Repeat Steps 4-6.
+
+
