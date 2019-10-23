@@ -1,3 +1,4 @@
+...javascript
 kanpur the loudly visual force 
 #@w  triger code for embedded code 
 for(int r ; t<10;i++)
@@ -29,3 +30,4 @@ retun 0;
 }
 }
 }
+...javacript
