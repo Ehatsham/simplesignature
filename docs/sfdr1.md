@@ -121,9 +121,9 @@ emailpdf |	1 to email the PDF generated to the contact attached, 0 (default) to 
 attachpdf |	1 to attach the PDF generated to the Signature record, 0 (default) to do nothing.
 attachpdftoparent |	1 to attach the PDF generated to the Parent record, 0 (default) to do nothing.
 requestedform	 | The name of the form that is being requested; used for differentiating Signature requests.
-requestedpdfname |	The name that you want the eventual PDF attachment to have. You can hard-code as well as include a fields from the value.  For example, for Contact parent object, where the Last Name was “Smith”, if you used the parameter this way:  
-> “requestedPDFName={!Contact.Name}_SignOff2017”, then the resulting PDF woud be called: “Smith_SignOff2017.pdf”.
+requestedpdfname |	The name that you want the eventual PDF attachment to have. You can hard-code as well as include a fields from the value.  For example, for Contact parent object, where the Last Name was “Smith”, if you used the parameter this way:“requestedPDFName={!Contact.Name}_SignOff2017”, then the resulting PDF woud be called: “Smith_SignOff2017.pdf”  .
 
+-----------------|-------------------
 contactField	|If your parent object is not the Contact record, but you still want to attach a Contact to the Signature record (you must to this if you want any of the PDF/email automation), then you need to tell Simple Signature where the Contact field is supposed to come from.  For this, simply put the API name (not the label) of the Contact lookup field in the parent object.
 sdocstype	| This is useful for s-Docs integration only.  Do not use this, if you do not have s-Docs installed.  The value of this parameter should be the API name of the parent object.  For example: Contact.  With this parameter, after the signature process, you will be re-directed to select an s-Docs template.
 defaultvalue_XXX	| The “defaultvalue_” parameter is dynamic, the parameter name always starts the same, but then must use a name of a formula field in the Signature object.  For example: defaultvalue_InspectionDate__c or defaultvalue_CustomerContact__c.  More on using this to achieve read-only values on the Signature form in the next section.
