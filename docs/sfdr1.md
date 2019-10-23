@@ -14,3 +14,13 @@ The first thing you will want to do is configure the Simple Signature form to sh
 ⦁	Make sure you are in the “ salesforce Lighning ” web version of Salesforce1, with Admin permissions.
 
 ⦁	At the top-right of the page click on Setup-->Apps-->Mobile Apps-->  Salesforce Navigation.  
+
+⦁	Select “β Sign” from the pages on the left, and use the arrow key to move it to the items on the right.  Position it near the top so that it isn’t lost.
+
+⦁	Press the Save button.
+
+⦁	Now log into Salesforce and verify that you can, in fact, see the “Sign” tab.  
+
+⦁	Test the process using the instructions in the next chapter.
+
+⦁	Next, go back to the Lightning web version of Salesforce to continue configuring.
