@@ -63,3 +63,30 @@ Using the steps above, you can add the fields that come with the form into the p
 If the Signature page is being called from a parent object (Opportunity, Contact, etc.), sometimes you might want read-only fields on the form. This gives the signer surety of what he or she is signing, and provides a better user experience.
 
 ⦁	Still in the Signature object, create any needed read-only field as formulas that pull data from the parent object (object from step #1.)  For example, if the parent object is the standard Opportunity object, and you want to pull in the Opportunity Name as read-only into the signature form, then create a formula field like this:
+
+
+
+
+
+⦁	Once you’ve added all the fields you want, scroll down to the “Field Set” section and click “Edit” on the SignatureFields field set.  You can now remove fields, reorder them, or add new fields to the form by dragging them down into the field set.
+⦁	Once you are done, go back to Salesforce lightning  and test the “Sign” tab, making sure that your entire wording is now as you wish it to be.
+
+
+
+
+
+# Connecting to a Parent Object
+ By default Signatures are stand-alone, but you can connect them to any object like Contracts, Orders, Cases or any other object.  Instructions to do so are below using the Contact object as an example:
+ 
+⦁	Make sure you are in the “Lightning Salesforce ” web version of Salesforce, with Admin permissions.
+
+⦁	At the top-right of the page click on Setup  after that click on object manager then click on Signature.
+
+⦁	In the Fields and relationship section, press the New button and create a Lookup field to the object you want to have as the Signature parent.  (You can do more than one.)  Contact is already done for you.
+
+⦁	Now scroll down to the Buttons, Links and Actions section, and click on the New Button or Link button.
+
+⦁	Enter “New Signature” for the Label and then select List Button as the Display Type (and unselect the Display Checkboxes option). 
+
+⦁	For the Behavior you can select what you think is best, and for the Content Source, choose URL.  Your screen should be something like this
+
