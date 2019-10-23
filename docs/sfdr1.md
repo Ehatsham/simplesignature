@@ -33,4 +33,9 @@ The next thing you need to do before beginning to use it is change what the form
 ⦁	At the top-right of the page click on Setup-->  user interface  -->  Custom Labels.
 
 ![alt text](images/src2.png "Signature Process")
+⦁	Find and then click on the Name of the Page_Title custom label.
 
+⦁	You will then be presented with a page where you can create a “Translation” for this particular item.  To do so, press the New button.
+
+
+![alt text](images/src3.png "Signature Process")
