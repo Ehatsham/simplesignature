@@ -65,14 +65,14 @@ If the Signature page is being called from a parent object (Opportunity, Contact
 ⦁	Still in the Signature object, create any needed read-only field as formulas that pull data from the parent object (object from step #1.)  For example, if the parent object is the standard Opportunity object, and you want to pull in the Opportunity Name as read-only into the signature form, then create a formula field like this:
 
 
-
+Field	API | Name | Field Type
+------------ | -------------
+Opportunity | Opportunity_Name__c	| 	Formula
+Formula | Opportunity__r.Name | 
 
 
 ⦁	Once you’ve added all the fields you want, scroll down to the “Field Set” section and click “Edit” on the SignatureFields field set.  You can now remove fields, reorder them, or add new fields to the form by dragging them down into the field set.
 ⦁	Once you are done, go back to Salesforce lightning  and test the “Sign” tab, making sure that your entire wording is now as you wish it to be.
-
-
-
 
 
 # Connecting to a Parent Object
