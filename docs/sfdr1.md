@@ -47,9 +47,7 @@ The next thing you need to do before beginning to use it is change what the form
 
 ⦁	Now, go back to Step 3 and this time click on the Long Legal Text 1 item.  This is the text that will go under the title of the form, and before the fields and signature.  If you can fit it all in, then go ahead and do so, if not you can add text in the Long Legal Text 2 item.  Repeat Steps 4-6.
 
-
-
-
+![alt text](images/src4.png "Signature Process")
 
 ⦁	Now do the same Steps 3-6 for any other elements you wish to change on the form.
 ⦁	To remove fields, or add custom fields to the form, go to Setup  Create  Objects and then click on the Signature object.  
