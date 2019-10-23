@@ -167,7 +167,8 @@ Congratulations.  You've done the hardest part. Now - you need to make sure ever
 5) First, go back to Setup > Develop > VisualForce Pages and find your new page on the list.  Click on the "Security" link next to the name of the new page.  A list of the profiles that can view this page will show up, you want to select all of them, or at least all of the ones who will use Simple Signature, and give them access. Save.
 
 6) We recommend optionally giving your new page a Tab style.  To do so, go to Setup > Interface > Tabs and press "New" on the VisualForce Tabs section.  Choose the page that you created, name it, and then select a color and icon that you like.  Save.
-Note: You might need to change the Salesforce lightning tab that you are using as described on page 10.
+
+> > Note: You might need to change the Salesforce lightning tab that you are using as described on page 10.
 
 7) Now you need to go back and modify any custom URLs you have created using the instructions starting on page 13.  Change the "signature__Signature" page name to the name of your new page.  For example, if the URL looks like this:
 
