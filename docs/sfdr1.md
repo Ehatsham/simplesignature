@@ -92,4 +92,27 @@ Formula | Opportunity__r.Name |
 
 ![alt text](images/src5.png "Signature Process")
 
+⦁	Now, for the actual URL, you must customize it depending on the parent object that you selected.  If you are using Contacts, then the URL would be this:
+
+    /apex/signature__Signature?parentid={!Contact.Id}&backtoparent=1
+
+
+Parameter	Description
+parentid	This will link the new Signature with a parent record of any type.  For example, for the Contact object, you would use the standard {!Contact.Id} formula field notation.
+backtoparent	1 to take the user back to the parent record after the signature process completes, 0 (default) to leave the user on the newly created Signature record.
+
+⦁	Save the Button.
+Now, before continuing, a brief section on advanced parameters that can be used in the Paid version of the app.  If you do not have the Paid version, you can safely skip ahead.
+
+
+
+Advanced Parameters
+The Paid Version of Simple Signature supports several other parameters that can be added to the URL in order to achieve advanced functionality.  For example, if you want to have an email automatically sent out requesting a signature from the contact attached to the Signature record, want to change what the form looks like, and want to attach the final PDF on the Contact, then you would construct a URL like this:
+
+  >  /apex/signature__Signature?parentid={!Contact.Id}&backtoparent=1&pdftemplate=c__MyVFPage&emailpdf=1&attachpdftoparent=1&attachpdf=0 &requestedPDFName={!Contact.Name}_SignOff2017&defaultvalue_Phone__c={!Contact.MobilePhone}&defaultvalue_Email__c={!Contact.Email}&contactField=Customer_Contact__c&sdocstype=Contact&requestedform=My Form Name
+
+### Following is a list of parameters available in the paid version as shown in the sample URL in the above example:
+
+
+
  
