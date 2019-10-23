@@ -139,4 +139,74 @@ defaultvalue_XXX	| The “defaultvalue_” parameter is dynamic, the parameter n
 
 ![alt text](images/src6.png "Signature Process")
 
+⦁	Edit the Signature related list to remove the standard “New” button and add the new button you just created.  Save the Layout and test it out.  
+You are done!  Happy Signing!
+ 
+ >> Or … Keep reading for more advanced functions.
+
+ 
+
+# Using a Custom Signature Page
+
+Most companies will be able to use the default signature page that comes with the app, but if you find yourself in need to changing more than just a couple fields, or having advanced functionality on this page, you can create your own version of the page that starts right where the standard one ends, and allows you to build onto it as needed.
+
+> * Note: A fairly advanced user will be able to follow these instructions to replicate the standard functionality using a custom page, but adding new functionality will require a user with development experience.  Contact support@toafinish.com if you need help in this task.  We can answer questions, and if you need us to develop the page, we offer those services as well.  Let us know.
+
+ 1) First you will need to add a static resource to your org that allows the signature process.  Go to Setup > custom code > Static Resources and press the "New" button.  Call the Static Resource "SignPad", change the Cache Control to "Public" and then select a file called SignPad.zip that you will need to download from the "resources" folder in our GitHub repository.
+GitHub.com Simple Signature Sample Code Repository
+
+ https://github.com/ToAFinish/simplesignature
+
+2) Next, you will need to create a new VisualForce page.  Go to Setup > Develop > VisualForce Pages and click the "New" button.  If the "New" button is not available, you will need to speak with your Administrator to get additional rights.  
+
+3) Once you see a new bank VisualForce page, fill out the Label and Name fields and then delete all of the default content that is in the main VisualForce Markup area.  Now you are ready to put the actual code in.
+
+4) Go back to the GitHub repository and this time go into the "pages" folder and click on the "CustomSignature" entry.  Copy all of the text in this page (without the line numbers), starting with <apex:page  and ending with </apex:page>.  Paste all of this text into the VisualForce Markup area in Salesforce and then Save the page.
+Congratulations.  You've done the hardest part. Now - you need to make sure everybody can see your page.
+
+5) First, go back to Setup > Develop > VisualForce Pages and find your new page on the list.  Click on the "Security" link next to the name of the new page.  A list of the profiles that can view this page will show up, you want to select all of them, or at least all of the ones who will use Simple Signature, and give them access. Save.
+
+6) We recommend optionally giving your new page a Tab style.  To do so, go to Setup > Interface > Tabs and press "New" on the VisualForce Tabs section.  Choose the page that you created, name it, and then select a color and icon that you like.  Save.
+Note: You might need to change the Salesforce lightning tab that you are using as described on page 10.
+
+7) Now you need to go back and modify any custom URLs you have created using the instructions starting on page 13.  Change the "signature__Signature" page name to the name of your new page.  For example, if the URL looks like this:
+
+   >  /apex/signature__Signature?parentid={!Contact.Id}&backtoparent=1
+
+
+And your new page is called "CustomSignature", then the new URL would be:
+
+  >  /apex/CustomSignature?parentid={!Contact.Id}&backtoparent=1
+
+
+Test, test, test and if you run into issue, you can move the URL back until you figure them out.  Let us know if you need help: support@toafinish.com.
+
+
+
+
+
+
+
+
+
+
+
+##Automatic Lead Creation
+
+By default Signatures are created and then exist in Salesforce independently of other records.  However, in the Paid Version of Simple Signature, it is possible to have a Lead Created immediately each time somebody signs via the Signature page that was set up in the previous steps.  Here are the necessary steps.
+
+1) First, the Lead creation functionality must be turned on.  Go to Setup > Apps > Packeging > Installed Packages and click on the "Configure" link next to the Simple Signature app.  If the paid version is enabled, you will see the "Configuration Steps: Options" panel.
+
+![alt text](images/src7.png "Signature Process")
+ 
+2) Turn on the "Create Lead on Save" option, and then press the "Save Settings" button.
+
+3) This might be all that is required as long as the only fields you need to be populated on the Lead are the First and Last name fields, and you have these fields on the Signature page.  However, many companies require other values to be populated for a Lead to be created.  If this is the case, you will need to add those values into the custom metadata area.  Go to Setup > custom Code > Custom MetaData Types and then click "Manage Records" next to the "Record_Creation" entry.
+
+4) Add or modify the records in this area in order to either set default values for Lead fields or else copy the values from fields on the Signature page. 
+
+5) Test by creating a signature, and then check to see that the Lead was created with all of the values you set up in step #4.
+
+> * Note: this feature is fairly new, so please let us know if you run into issues: support@toafinish.com
+
  
