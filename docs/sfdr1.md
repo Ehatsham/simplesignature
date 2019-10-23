@@ -30,5 +30,7 @@ The first thing you will want to do is configure the Simple Signature form to sh
 The next thing you need to do before beginning to use it is change what the form says in order to make it yours.
 ⦁	Make sure you are in the “Lightning” web version of Salesforce, with Admin permissions.
 
-⦁	At the top-right of the page click on Setup-->  user interface  -->  Custom Labels.  
+⦁	At the top-right of the page click on Setup-->  user interface  -->  Custom Labels.
+
+![alt text](images/src2.png "Signature Process")
 
