@@ -126,6 +126,15 @@ contactField	| If your parent object is not the Contact record, but you still wa
 sdocstype	| This is useful for s-Docs integration only.  Do not use this, if you do not have s-Docs installed.  The value of this parameter should be the API name of the parent object.  For example: Contact.  With this parameter, after the signature process, you will be re-directed to select an s-Docs template.
 defaultvalue_XXX	| The “defaultvalue_” parameter is dynamic, the parameter name always starts the same, but then must use a name of a formula field in the Signature object.  For example: defaultvalue_InspectionDate__c or defaultvalue_CustomerContact__c.  More on using this to achieve read-only values on the Signature form in the next section.
 
+ > `*` Note: the last few parameters are complicated, and may need some help from our support team.  Feel free to reach out to support@toafinish.com with questions.
+ 
+####After creating the signature button:
+
+⦁	Now go to Setup  --> click on the object manager and click on Contacts and go to   Page Layouts after that click on  contact layout that will be exist in page layouts of contacts object.   (Note: if you selected a different object as the parent, then go to the page layouts for that object, not for Contacts.)
+
+⦁	Click the Edit button next to the Page Layout that you want to add the Signature functionality to.  (Note: You might need to do this several times, depending on how many Page Layouts you are using. )(NOT REQUIRED )
+
+⦁	Go to “Related Lists” and drag down the Signatures related list onto the layout. 
 
 
  
