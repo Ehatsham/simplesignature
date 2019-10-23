@@ -106,7 +106,7 @@ Now, before continuing, a brief section on advanced parameters that can be used 
 
 
 
-Advanced Parameters
+# Advanced Parameters
 The Paid Version of Simple Signature supports several other parameters that can be added to the URL in order to achieve advanced functionality.  For example, if you want to have an email automatically sent out requesting a signature from the contact attached to the Signature record, want to change what the form looks like, and want to attach the final PDF on the Contact, then you would construct a URL like this:
 
   >  /apex/signature__Signature?parentid={!Contact.Id}&backtoparent=1&pdftemplate=c__MyVFPage&emailpdf=1&attachpdftoparent=1&attachpdf=0 &requestedPDFName={!Contact.Name}_SignOff2017&defaultvalue_Phone__c={!Contact.MobilePhone}&defaultvalue_Email__c={!Contact.Email}&contactField=Customer_Contact__c&sdocstype=Contact&requestedform=My Form Name
