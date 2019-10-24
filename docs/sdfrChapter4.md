@@ -147,6 +147,49 @@ Now, save this button.
 
 ⦁	click on mobile and lightning action ,after that we find button on right side and will drag to this  on  Salesforce1 & Lightning Actions section area  and click on save .(by these effort it will also show in lightning on object page as tab )
 
+
+> # s-Docs and COOLDOX Template Setup
+
+If you have a document generation app, like s-Docs or COOLDOX, you have only one more step to incorporate the signature into your document templates.
+
+⦁	The final step that needs to be done is to simply update any template in s-Docs or COOLDOX where you want to include a signature, and drop in the Signature Image field you created earlier in the chapter.  This field will be blank if it hasn't been signed yet.
+
+⦁	If Simple Signature has been used to sign, then not only will the Signature Image contain the signature, but also the Signed__c field will be TRUE.  You can use this to determine if a signature is still needed or not.
+
+Let us know if you have any questions when going through this section.  It can be difficult, especially for the less-technical among us.  If you need help, reach out to us at support@toafinish.com and we will be happy to help.
+
+That's it.  You are ready to test Simple Signature with s-Docs or **COOLDOX!**
+
+
+> # PDF Form Creation
+
+If you are not using a Document Generation app, or simply prefer using your own document in order to achieve your desired result, use this section to get started on the document.
+
+The first thing to do is to set up a VisualForce page that will be used as the PDF where the final signature will be merged onto.  This VisualForce page will usually be formatted in a particular way, with the logo and other information of your company.  This is the most difficult part of the process and it cannot really be explained in a step-by-step tutorial.  If you do not already know how to create VisualForce pages, then you must either ask someone internally to do it, or you can contact us at support@toafinish.com in order to do it for you.  We offer hourly services for this type of work if you don't have someone with the skills or time to do it.
+
+To get you started, you can use the included signature__BasicSignaturePDF page that is included with the app.  This page only list the legal wording, selected fields, and the signature on a simple form.
+
+If you are using Opportunities as the parent object, we also provide a sample VisualForce page that you can use as a starter.  Use these instructions to build it in a Sandbox or Dev org.  You will NOT be able to do it directly in Production, but rather, you need to do it in a Sandbox and then deploy it to Production.
+
+**1)** First you will need to add a static resource to your org that allows the signature process.  Go to Setup > custom code  > Static Resources and press the "New" button.  Call the Static Resource "sampleinvoice", change the Cache Control to "Public" and then select a file called SampleInvoice.zip which you will need to download from the "resources" folder in our GitHub repository.
+GitHub.com Simple Signature Sample Code Repository
+https://github.com/ToAFinish/simplesignature
+
+**2)** Next, create controller for your VisualForce page.  Go to Setup > custom code  > Apex Classes and press the "New" button.  Note that this will only work inside of a Sandbox or Development org.  You will not be able to do it directly in Production, so if you do not see a "New" button, that is probably the reason.  
+**3)** Go back to the GitHub repository, in the "classes" folder, and open the SampleOpportunityPDFController file and copy all of the contents, without the line numbers.  Paste all of it into the Apex Class Salesforce window and Save.
+* You should also copy the SampleOpportunityPDFControllerTest file as another Apex Class if you intend to deploy it into production.
+**4)** Finally, you will now need to create a new VisualForce page.  Go to Setup > custom code  > VisualForce Pages and click the "New" button. 
+**5)** Once you see a new bank VisualForce page, fill out the Label and Name fields and then delete all of the default content that is in the main VisualForce Markup area.  Now you are ready to put the actual code in.
+**6)** Go back to the GitHub repository and this time go into the "pages" folder and click on the "SampleOpportunityPDF" entry.  Copy all of the text in this page (without the line numbers), starting with <apex:page  and ending with </apex:page>.  Paste all of this text into the VisualForce Markup area in Salesforce and then Save the page.
+**7)** First, go back to Setup > custom code  > VisualForce Pages and find your new page on the list.  Click on the "Security" link next to the name of the new page.  A list of the profiles that can view this page will show up, you want to select all of them, or at least all of the ones who will use Simple Signature, and give them access. Save.
+Once you are finished creating the page, you will need to assign it as the one to use in your Org.  
+
+> # App Configuration
+
+Once you have the VisualForce page that you want to use as the default for PDFs to be generated for signatures, you will need to configure the app to use it.
+
+![alt text](images/src14.png "Signature Process")
+
 ![alt text](images/src12.png "Signature Process")
 
 
