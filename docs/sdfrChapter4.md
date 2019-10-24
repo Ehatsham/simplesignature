@@ -1,3 +1,5 @@
+# chapter 4
+
 > # Document Generation (VisualForce, s-Docs, or COOLDOX)
 
 ### How to set up Simple Signature to work with custom documents, either through a Document Generation app, or via code…
@@ -97,6 +99,9 @@ trigger copySig on signature__Signature__c (after insert, after update) {
 
 ```
 
+
+![alt text](images/src11.png "Signature Process")
+ 
 We recommend you copy this code from our GitHub repositor, shown below. If a more updated version of the code exists, it will most likely be here, in the “triggers” folder:
 GitHub.com Simple Signature Sample Code Repository
 https://github.com/ToAFinish/simplesignature
@@ -104,11 +109,17 @@ https://github.com/ToAFinish/simplesignature
 This code will take the signature created and will copy it back to the object you will be using with your Document Generation app, like s-Docs or COOLDOX.
 
 ⦁	Now you need to go back to the object from Step #3 and scroll down to the "Buttons, Links, and Actions" section.  Click on the "New Button or Link" button and fill it out like shown below:
+
 ⦁	Label = "Signature" or whatever you want it to be
+
 ⦁	Name = "Signature"
+
 ⦁	Display Type = "Detail Page Button"
+
 ⦁	Behavior = "Display in existing window without sidebar or header"
+
 ⦁	Content Source = "URL"
+
 ⦁	Text area should be filled with something like this:
 
 
@@ -117,16 +128,15 @@ This code will take the signature created and will copy it back to the object yo
 
 Some of the different parameters supported are listed below, using examples from the Opportunity object:
 
-COMPONENT	DESCRIPTION
+COMPONENT | DESCRIPTION
+--------- | -----------
+ /apex/signature__Signature	| This is the name of the Signature page.  Showing the default, but you can change it if you have a custom page.
+parentid={!Opportunity.Id}	| This is the record Id of the current object where you start from.
+backtoparent=1	| This tells it to come back to this record after the signature.  If you change it to 0, it will stay on the Signature record when done.
 
-> /apex/signature__Signature	This is the name of the Signature page.  Showing the default, but you can change it if you have a custom page.
-
-parentid={!Opportunity.Id}	This is the record Id of the current object where you start from.
-backtoparent=1	This tells it to come back to this record after the signature.  If you change it to 0, it will stay on the Signature record when done.
-
-emailpdf=1	This tells it to email the PDF to the contact once finished. (optional)
-contactField=Customer_Contact__c	This tells it which is the contact field on the current object.
-sdocstype=Opportunity	This tells s-Docs the type of object being used, so that it will take you to the s-Docs merge page immediately after signature. (optional)
+emailpdf=1	| This tells it to email the PDF to the contact once finished. (optional)
+contactField=Customer_Contact__c | This tells it which is the contact field on the current object.
+sdocstype=Opportunity | This tells s-Docs the type of object being used, so that it will take you to the s-Docs merge page immediately after signature. (optional)
 
 * For a complete list of supported parameters, please review chapter 2. 
 Now, save this button.
@@ -136,4 +146,7 @@ Now, save this button.
 ⦁	go to set up and after that click on object manager and select parent object and click on the  page layouts and after that click on (object name which you have selected )  layout suppose you have selected opportunity as parent object so in this page you will have to click on opportunity layout .
 
 ⦁	click on mobile and lightning action ,after that we find button on right side and will drag to this  on  Salesforce1 & Lightning Actions section area  and click on save .(by these effort it will also show in lightning on object page as tab )
+
+![alt text](images/src12.png "Signature Process")
+
 
