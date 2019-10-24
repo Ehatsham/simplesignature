@@ -78,10 +78,10 @@ The Paid version of Simple Signature includes many advantages.  See a chart comp
 Feature	| Free	| Paid
 ------- | ---- | ----
 Unlimited usage in Salesforce1, Classic and Lightning	| ✔	| ✔
-Technical | Support		| ✔
-Field changes on the Signature Form	Limited | |	✔  
+Technical Support	|	| ✔
+Field changes on the Signature Form	| Limited |	✔  
 Custom/Multiple Signature Forms |		|✔
-Link to Parent Object	Limited	| | ✔
+Link to Parent Object |	Limited	| ✔
 Document Generation with s-Docs and COOLDOX | |		✔
 Signature Request & Signature Completion Emails	| |	✔
 Signature Request Tracking		| | ✔
