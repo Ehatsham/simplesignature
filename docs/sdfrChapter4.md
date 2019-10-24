@@ -40,7 +40,7 @@ Base URL for images (e.g. https://XXX.my.salesforce/ or https://naXX.salesforce.
 Before we can start using Simple Signature with another app, we need to create certain fields that will be used to display the images, and we also might need to do some configuration, and possibly some coding, in order to get everything to work.
 ⦁	Go to the object you will be using to generate s-Docs/COOLDOX documents from (If it is a standard object, then go to Setup  Customize and click on the object and then go to fields.  If it is a custom object, go to Setup  Create  Objects, and click on the object.)  Now create the following fields:
 Field	| API Name | Field Type
------ | -------- | ----------
+------- | -------- | ----------
 Signature | Image	SignatureImage__c |	Rich Text Area(32768)
 Signed	| Signed__c	| Checkbox
 
@@ -61,7 +61,8 @@ At this point you have done all you need to do from a configuration perspective,
     COPIES THE SIGNATURE IMAGE FROM THE SIGNATURE OBJECT 
     TO THE PARENT OPPORTUNITY RECORD AND FLAGS IT AS SIGNED
 */`
-```javascript```
+
+```javascript
 trigger copySig on signature__Signature__c (after insert, after update) {
     Map <Id,signature__Signature__c> sigMap = new Map <Id, signature__Signature__c>();
     Set <Id> newIds = new Set <Id> ();
