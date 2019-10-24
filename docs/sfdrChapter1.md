@@ -71,4 +71,21 @@ Simple Signature is not intended to replace other document generation apps for S
 
 ![alt text](images/src10.png "Signature Process")
 
+## Free vs. Paid App Comparison
+
+The Paid version of Simple Signature includes many advantages.  See a chart comparing the versions below:
+
+Feature	| Free	| Paid
+------- | ---- | ----
+Unlimited usage in Salesforce1, Classic and Lightning	| ✔	| ✔
+Technical | Support		| ✔
+Field changes on the Signature Form	Limited | |	✔  
+Custom/Multiple Signature Forms |		|✔
+Link to Parent Object	Limited	| | ✔
+Document Generation with s-Docs and COOLDOX | |		✔
+Signature Request & Signature Completion Emails	| |	✔
+Signature Request Tracking		| | ✔
+Reports & Dashboards		| | ✔
+Automated Lead Creation | |		✔
+
 
