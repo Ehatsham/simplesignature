@@ -88,4 +88,29 @@ Signature Request Tracking		| | ✔
 Reports & Dashboards		| | ✔
 Automated Lead Creation | |		✔
 
+## Keep it Simple.  Get it done.
+
+> # Before You Begin, Requirements
+
+Before you begin working with our app, you must have several components already in place and configured.  We will not cover these components in detail, but will at least point you to where you can get the information you need.
+
+### Salesforce.com
+
+A production system Salesforce.com Org will be needed in order to set up the integration.  A sandbox will be very helpful in this process as well.  Any edition, Professional and above, of Salesforce.com should work. 
+
+⦁	Sales Cloud
+⦁	Service Cloud
+⦁	Custom Cloud (Force.com)
+
+> # Just out of BETA – What it Means
+
+Simple Signature is a … simple app, so not much can go wrong, but still, we know that somebody is going to find something that is broken.  We just came out of BETA and most Salesforce users still haven’t tested our app.  So, please be gracious, and tell us about anything you run into.  Email at support@toafinish.com and we’ll gladly take a look at what you find.
+
+> # Please, Please, Please … Review us!
+
+We greatly enjoy being able to provide users with and app they will find useful.  And a few of those users sometimes need us to build other things for them, so having a free version is one of the ways we showcase our work for potential clients.
+
+So, if you like the app, please leave us a positive review on the AppExchange:
+https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DqCoUUAV  .
+But if you run into issues, please don't leave them there for the world to see (unless we can’t get it resolved).  Rather, contact us at support@toafinish.com and we'll work together to make this app To A FinishTM.
 
