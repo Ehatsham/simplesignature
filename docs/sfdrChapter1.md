@@ -69,5 +69,6 @@ Introducing a simple solution to capture signatures on the Force.com platform.  
 Simple Signature is not intended to replace other document generation apps for Salesforce, but rather as a tool to quickly gather signatures, unencumbered by multiple-step processes or expensive, custom solutions.  No need to create a Lead or Contact record in advance; just read, enter your name and maybe a couple other things, and sign.  Keep it simple.  Get it done.
 
 
+![alt text](images/src10.png "Signature Process")
 
 
