@@ -58,4 +58,6 @@ Test us. Allow us to show you the difference of doing work To A Finish™.
 
 You can find more about To A Finish at www.toafinish.com
 
+![alt text](images/src8.png "Signature Process")
+
 
