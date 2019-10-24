@@ -173,8 +173,9 @@ If you are using Opportunities as the parent object, we also provide a sample Vi
 
 **1)** First you will need to add a static resource to your org that allows the signature process.  Go to Setup > custom code  > Static Resources and press the "New" button.  Call the Static Resource "sampleinvoice", change the Cache Control to "Public" and then select a file called SampleInvoice.zip which you will need to download from the "resources" folder in our GitHub repository.
 
-GitHub.com Simple Signature Sample Code Repository
-https://github.com/ToAFinish/simplesignature
+GitHub.com Simple Signature Sample Code Repository | .
+-------------------------------------------------- | --------------------------------------------
+ https://github.com/ToAFinish/simplesignature | .
 
 **2)** Next, create controller for your VisualForce page.  Go to Setup > custom code  > Apex Classes and press the "New" button.  Note that this will only work inside of a Sandbox or Development org.  You will not be able to do it directly in Production, so if you do not see a "New" button, that is probably the reason.  
 
@@ -217,6 +218,6 @@ Partner Email Address | This should be the email address given to you by To A Fi
 
 > Enjoy Simple Signature!
 
-![alt text](images/src12.png "Signature Process")
+
 
 
