@@ -100,7 +100,7 @@ trigger copySig on signature__Signature__c (after insert, after update) {
 ```
 
 
-![alt text](images/src11.png "Signature Process")
+![alt text](images/src12.png "Signature Process")
  
 We recommend you copy this code from our GitHub repositor, shown below. If a more updated version of the code exists, it will most likely be here, in the “triggers” folder:
 GitHub.com Simple Signature Sample Code Repository
