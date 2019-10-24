@@ -2,7 +2,7 @@
 > Introducing all the key components of the Simple Signature App for Salesforce.com
 ## T
 his manual will help you through the implementation of the Simple Signature app for your Salesforce.com Org.  You can read this chapter if you desire to do so, but most users can probably start at the next chapter, where the installation and configuration instructions begin.
-> Thank you for considering our app in your organization.
+> Thank you for considering our app in your organization. 
 
 ### icon key
 ⦁	Details You Can Skip
