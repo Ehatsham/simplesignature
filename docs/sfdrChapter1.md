@@ -59,5 +59,15 @@ Test us. Allow us to show you the difference of doing work To A Finish™.
 You can find more about To A Finish at www.toafinish.com
 
 ![alt text](images/src9.png "Signature Process")  
+When you finish a thing you ought to be able to say to yourself: "There, I am willing to stand for that piece of work. It is not pretty well done; it is done as well as I can do it; done to a complete finish. I will stand for that. I am willing to be judged by it."
+## - O.S. Marden
+
+> # Introducing Simple Signature 
+
+Introducing a simple solution to capture signatures on the Force.com platform.  With Simple Signature you can acquire signatures on release forms, petitions, waivers, and other simple forms that need a few key data elements and a signature.  Simple.
+
+Simple Signature is not intended to replace other document generation apps for Salesforce, but rather as a tool to quickly gather signatures, unencumbered by multiple-step processes or expensive, custom solutions.  No need to create a Lead or Contact record in advance; just read, enter your name and maybe a couple other things, and sign.  Keep it simple.  Get it done.
+
+
 
 
