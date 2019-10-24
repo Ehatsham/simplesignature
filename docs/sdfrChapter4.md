@@ -172,23 +172,50 @@ To get you started, you can use the included signature__BasicSignaturePDF page t
 If you are using Opportunities as the parent object, we also provide a sample VisualForce page that you can use as a starter.  Use these instructions to build it in a Sandbox or Dev org.  You will NOT be able to do it directly in Production, but rather, you need to do it in a Sandbox and then deploy it to Production.
 
 **1)** First you will need to add a static resource to your org that allows the signature process.  Go to Setup > custom code  > Static Resources and press the "New" button.  Call the Static Resource "sampleinvoice", change the Cache Control to "Public" and then select a file called SampleInvoice.zip which you will need to download from the "resources" folder in our GitHub repository.
+
 GitHub.com Simple Signature Sample Code Repository
 https://github.com/ToAFinish/simplesignature
 
 **2)** Next, create controller for your VisualForce page.  Go to Setup > custom code  > Apex Classes and press the "New" button.  Note that this will only work inside of a Sandbox or Development org.  You will not be able to do it directly in Production, so if you do not see a "New" button, that is probably the reason.  
+
 **3)** Go back to the GitHub repository, in the "classes" folder, and open the SampleOpportunityPDFController file and copy all of the contents, without the line numbers.  Paste all of it into the Apex Class Salesforce window and Save.
-* You should also copy the SampleOpportunityPDFControllerTest file as another Apex Class if you intend to deploy it into production.
+> `* You should also copy the SampleOpportunityPDFControllerTest file as another Apex Class if you intend to deploy it into production.`
+
 **4)** Finally, you will now need to create a new VisualForce page.  Go to Setup > custom code  > VisualForce Pages and click the "New" button. 
+
 **5)** Once you see a new bank VisualForce page, fill out the Label and Name fields and then delete all of the default content that is in the main VisualForce Markup area.  Now you are ready to put the actual code in.
+
 **6)** Go back to the GitHub repository and this time go into the "pages" folder and click on the "SampleOpportunityPDF" entry.  Copy all of the text in this page (without the line numbers), starting with <apex:page  and ending with </apex:page>.  Paste all of this text into the VisualForce Markup area in Salesforce and then Save the page.
+
 **7)** First, go back to Setup > custom code  > VisualForce Pages and find your new page on the list.  Click on the "Security" link next to the name of the new page.  A list of the profiles that can view this page will show up, you want to select all of them, or at least all of the ones who will use Simple Signature, and give them access. Save.
-Once you are finished creating the page, you will need to assign it as the one to use in your Org.  
+
+*Once you are finished creating the page, you will need to assign it as the one to use in your Org. *
 
 > # App Configuration
 
 Once you have the VisualForce page that you want to use as the default for PDFs to be generated for signatures, you will need to configure the app to use it.
 
 ![alt text](images/src14.png "Signature Process")
+
+**1)** Go to Setup > Apps > packaging > Installed Packages and click on the "Configure" link next to the Simple Signature app.  If the paid version is enabled, you will see these options:
+
+**2)** Turn on or off the options according to what is defined below, and fill out any fields that are necessary.  Then click the Save Settings button.
+
+Option	| Description
+------  | -----------
+Run Batch on Save | Run a job to email the blank and completed PDFs once the Signature is finished.
+Attach PDF After Signature	| Attach the completed PDF to the Signature record.
+Attach PDF on Parent Record After Signature | Attach the completed PDF to the parent record.
+Email PDF to Contact after Signature | Email the completed PDF to the Contact on the Signature record.
+Template VisualForce Page for PDF | This field must be populated with the name of the VisualForce page that will be used.  If either of the above items is set, then this one must also be set.  If you do not have a VisualForce page, you can use the default one: signature__BasicSignaturePDF 
+Default width (in pixels) for signature field (default = 500) | This is the width of the signature that will be saved for merging into an s-Docs template.  The smaller the value, the smaller the signature will appear.  If you are OK with the default of 500, then no need to enter anything different here, but it is a good idea to enter a number to avoid confusing in the future.
+Base URL for images (e.g. https://XXX.my.salesforce/ or https://naXX.salesforce.com/) | This value can be gotten by clicking on the Home tab, and then copying the first part of the URL.  This is a critical component, so don't get this wrong or images will be broken.
+Send Email to Partner |	This should be turned on only if you are working with To A Finish technical support to enable the Partner option, where the signature requests are hosted in our Org.  This is used in particular with Profession edition.
+Partner Email Address | This should be the email address given to you by To A Finish technical support.
+
+> You are now ready to use Simple Signature with the new VisualForce page.  Please let us know if you run into any issues or if something in this documentation is not clear.  We are available at support@toafinish.com for any questions you might have.
+
+> Enjoy Simple Signature!
 
 ![alt text](images/src12.png "Signature Process")
 
